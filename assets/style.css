@@ -67,6 +67,14 @@ div.form-floating .form-control{
     color:rgb(7, 94, 66);
     font-weight: 600;
 }
+.col .titles{
+   
+    background-color: none;
+    border-bottom: 3px solid rgb(28, 209, 241);
+    border-radius: 10px;
+    margin: 5%;
+    font-family: 'Quicksand', sans-serif;
+}
 .sendButP{
     background-image: linear-gradient(6deg, rgb(28, 209, 241),rgba(0, 0, 0,0));
     background-color: rgba(0, 0, 0,0);
