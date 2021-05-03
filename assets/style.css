@@ -90,9 +90,22 @@ div.form-floating .form-control{
     font-size: 8px;
     margin-bottom: 20px;
 }
+.editBut{
+    background-image: linear-gradient(6deg, rgb(28, 241, 178),rgba(0, 0, 0,0));
+    background-color: rgba(0, 0, 0,0);
+    border:none;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    color: rgb(55, 110, 93);
+    font-size: 8px;
+    margin-bottom: 20px;
+    right: 0px;
+    font-size: 12px;
+}
 .deleButP{
     position: absolute;
-    background-image: linear-gradient(6deg, rgb(28, 209, 241),rgba(0, 0, 0,0));
+    background-image: linear-gradient(6deg,  rgb(243, 215, 154),rgba(0, 0, 0,0));
     background-color: rgba(0, 0, 0,0);
     border:none;
     height: 20px;
@@ -171,6 +184,41 @@ h4.delteText{
 }
 .modal{
     overflow-y: auto;
+    
+}
+.modal-content{
+    background-image: linear-gradient(6deg, rgb(215, 243, 234),rgba(251, 253, 232, 0.3));
+
+}
+.modal-title{
+    font-family: 'Quicksand', sans-serif;
+}
+.bodypost{
+    font-family: 'Quicksand', sans-serif;
+}
+.close{
+    position: absolute;
+    background-image: linear-gradient(6deg, rgb(241, 131, 28),rgba(0, 0, 0,0));
+    background-color: rgba(0, 0, 0,0);
+    border:none;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+   
+    font-size: 8px;
+    margin-bottom: 20px;
+    top:20px;
+    right:20px;
+    
+
+}
+.close span{
+    position: absolute;
+    color: rgb(141, 76, 46);
+    font-size: 20px;
+    top:5px;
+    left: 11px;
+    
 }
 img{
     max-width: 200px;

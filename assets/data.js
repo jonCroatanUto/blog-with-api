@@ -133,6 +133,7 @@ function postData(event,post_id,post_body,user_name){
     $('#textContent').append(`<p class='bodypost'>${post_body}</p>`);
     $('#buttonsZone').empty();
     $('#buttonsZone').append(`<button class="sendButC">See post coments </button>`);
+    $('#buttonsZone').append(`<button class="editBut">edit </button>`);
     //$('button.sendButC').on('click',function(){DataComent(post_id)})
 
     //$('button.sendButC').on('click',function(){DataComent(post_id)})
