@@ -6,6 +6,7 @@ $('#usBut').on('click',DataUser);
 //$('#comBut').on('click',DataComent);
 let url='http://localhost:3000/'
 function DataUser(){
+    
     $('.delete').hide()
     $('h4.delteText').remove()
     $('#finalDelet').remove()
@@ -138,7 +139,7 @@ function postData(event,post_id,post_body,user_name){
 
     //$('button.sendButC').on('click',function(){DataComent(post_id)})
 
-
+    $('button.editBut').on('click',function(){DataEdit(post_id,post_body)})
     $('button.sendButC').on('click',function(){DataComent(post_id)})
 
     $(event).parent().css('transition','2s');
@@ -146,6 +147,21 @@ function postData(event,post_id,post_body,user_name){
 
 
 
+}
+function DataEdit(id,text){
+    $('.comBox').append(`<div class='editBox' >${text}</div>`)
+    $('.editBox').append(`<div class='formEdit'><input class='bodyEdit'type='text'><button class='call'>change text<button</div>`)
+    $('.call').on('click', function(){
+        
+        
+        axios.patch(url+`post/${id}`,{
+        body: `${$('.bodyEdit').val()}`})
+       .then(
+            DataUser()
+        )
+      
+    
+    })
 }
 
 function DataComent(idpost){
