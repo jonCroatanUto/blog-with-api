@@ -156,10 +156,15 @@ function DataEdit(id,text){
         
         axios.patch(url+`post/${id}`,{
         body: `${$('.bodyEdit').val()}`})
+        
        .then(
+        
             DataUser()
+
+            
         )
-      
+        $('.editBox').text(`EL texto del post ha sido cambiado a: ${$('.bodyEdit').val()}`);
+        
     
     })
 }
