@@ -121,12 +121,14 @@ function deletePost(userNam,postID){
 }
 
 function postData(event,post_id,post_body,user_name){
-    
+    $('.modal-header').css('opacity','1');
+   $('.modal-body').css('opacity','1');
+   $('.modal-footer').css('opacity','1');
     $('.comBox').empty();
     $('.modal-header img').remove();
     $('#exampleModalLongTitle').empty();
     $('#exampleModalLongTitle').append(`<p class='idpost'>${user_name} post: </p>`);
-    $('.modal-header').prepend('<img src="https://yt3.ggpht.com/ytc/AAUvwngLxx3Ylzao3sJXP_H8faqBjtRf6VO0dX8ZkVJt=s176-c-k-c0x00ffffff-no-rj" alt="hola">')
+    $('.modal-header').prepend('<img src="https://image.shutterstock.com/image-photo/businessman-portrait-silhouette-mysterious-face-260nw-133966721.jpg" alt="persona anionima">')
     $('#textContent').empty();
     $('#textContent').append(`<p class='bodypost'>${post_body}</p>`);
     $('#buttonsZone').empty();
@@ -146,9 +148,9 @@ function postData(event,post_id,post_body,user_name){
 }
 
 function DataComent(idpost){
-   $('.modal-header').css('opacity','0.7');
-   $('.modal-body').css('opacity','0.7');
-   $('.modal-footer').css('opacity','0.7');
+   $('.modal-header').css('opacity','0.4');
+   $('.modal-body').css('opacity','0.4');
+   $('.modal-footer').css('opacity','0.4');
     
     return axios.get(url+`post/${idpost}/coments`)
     .then(
